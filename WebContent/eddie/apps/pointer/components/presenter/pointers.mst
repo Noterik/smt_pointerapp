@@ -1,0 +1,3 @@
+{{#nodes}}
+	<div class="pointerdot" style="top:{{y}}%;left:{{x}}%;"> </div>
+{{/nodes}}

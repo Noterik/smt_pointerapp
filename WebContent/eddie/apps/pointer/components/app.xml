@@ -1,0 +1,28 @@
+<app>
+	<view id="#screen">
+		<template>screen.mst</template>
+		<controller id="ScreenController">
+		</controller>
+	</view>
+	
+	<view id="#presenter">
+		<template>presenter/presenter.mst</template>
+		<style>presenter/presenter.css</style>
+		<controller id="PresenterController">
+		</controller>
+	</view>
+	
+	<view id="#pointers">
+		<template>presenter/pointers.mst</template>
+		<controller id="PointersController">
+		</controller>
+	</view>
+	
+	<view id="#trackpad">
+		<template>trackpad/trackpad.mst</template>
+		<style>trackpad/trackpad.css</style>
+		<controller id="TrackpadController">
+		</controller>
+	</view>
+
+</app>
