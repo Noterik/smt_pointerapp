@@ -16,7 +16,7 @@ public class PointersController extends Html5Controller {
 	public void attach(String sel) {
 		selector = sel;
 		// call onPointerChange model changes for one of the pointers 
-		model.onPropertiesUpdate("/shared/pointer/","onPointerChange",this);
+		model.onPropertiesUpdate("/shared/pointer/*","onPointerChange",this);
 	}
 	
 	
@@ -27,6 +27,7 @@ public class PointersController extends Html5Controller {
 		FsPropertySet set = (FsPropertySet)e.target; // get the target object for the event
 		
 		// check if we already know this pointer if not add it to our list
+		System.out.println("PATH="+e.path);
 		FsNode pointer = pointers.getNode(e.path); // check if we have it based on targets id
 		if (pointer==null) { 
 			pointer = new FsNode(""); // its a new pointer so create a node
